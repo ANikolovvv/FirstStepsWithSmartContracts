@@ -7,7 +7,9 @@ picture_price=40;
 total_price=0;
 
 
-stages_of_championship=[{"Quarter final":[{"Standard":55.50},{"Premium":105.20},{"VIP":118.90}]},{"Semi final":[{"Standard":75.88},{"Premium":125.22},{"VIP":300.40}]},{"Final":[{"Standard":110.10},{"Premium":160.66},{"VIP":400}]},];
+stages_of_championship=[{"Quarter final":[{"Standard":55.50},{"Premium":105.20},{"VIP":118.90}]},
+                        {"Semi final":[{"Standard":75.88},{"Premium":125.22},{"VIP":300.40}]},
+                        {"Final":[{"Standard":110.10},{"Premium":160.66},{"VIP":400}]},];
 
 for stage in stages_of_championship:
     for type in stage:
