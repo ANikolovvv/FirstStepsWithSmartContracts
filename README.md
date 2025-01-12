@@ -19,6 +19,7 @@ To follow along or replicate the examples in this repository, ensure you have th
 - **Node.js**: For managing dependencies and running blockchain tools.
 - **Python**: For writing scripts and interacting with smart contracts.
 - **Brownie**: A Python-based framework for Ethereum smart contract development.
+- **Ganache** (for local blockchain testing)
 
 ---
 
