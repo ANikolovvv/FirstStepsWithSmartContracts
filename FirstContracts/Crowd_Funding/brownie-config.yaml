@@ -1,0 +1,13 @@
+dependencies:
+  - smartcontractkit/chainlink-brownie-contracts@1.1.1
+compiler:
+  solc:
+    remappings:
+      - "@chainlink=smartcontractkit/chainlink-brownie-contracts@1.1.1"
+dotenv: .env
+networks:
+  sepolia:
+    host: https://sepolia.infura.io/v3/$WEB3_INFURA_PROJECT_ID
+    timeout: 30
+wallets:
+  from_key: ${PRIVATE_KEY}
