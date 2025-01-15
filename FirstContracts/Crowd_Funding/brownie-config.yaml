@@ -6,8 +6,11 @@ compiler:
       - "@chainlink=smartcontractkit/chainlink-brownie-contracts@1.1.1"
 dotenv: .env
 networks:
+  development:
+    eth_usd_price_feed: "0x0000000000000000000000000000000000000000"  # Placeholder for mock deployment
   sepolia:
     host: https://sepolia.infura.io/v3/$WEB3_INFURA_PROJECT_ID
     timeout: 30
+    eth_usd_price_feed: "0x694AA1769357215DE4FAC081bf1f309aDC325306"
 wallets:
   from_key: ${PRIVATE_KEY}
