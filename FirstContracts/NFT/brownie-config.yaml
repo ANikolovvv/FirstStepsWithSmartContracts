@@ -1,12 +1,19 @@
 dependencies:
-  - smartcontractkit/chainlink-brownie-contracts@1.1.1
   - OpenZeppelin/openzeppelin-contracts@4.9.0
+
 compiler:
   solc:
-    remappings:
-      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.9.0"
-      - "@chainlink=smartcontractkit/chainlink-brownie-contracts@1.1.1"
+    version: 0.8.0
 
-dotenv: .env
+networks:
+  mainnet:
+    eth_usd_price_feed: <ADDRESS>
+  kovan:
+    eth_usd_price_feed: <ADDRESS>
+
+pinata:
+  api_key: ${PINATA_API_KEY}
+  api_secret: ${PINATA_API_SECRET}
+
 wallets:
   from_key: ${PRIVATE_KEY}
